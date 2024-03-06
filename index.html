@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Encriptado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mensaje Secreto</title>
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <div>
-            <h1>Encriptado y Desencritado de mensajes</h1>
-            <input type="text" class="texto-a-ingresar" id="texto-ingresado" placeholder="Ingrese el texto aqui">
+        <div id="lado-izquierdo">
+            <section>
+                <h1>Encriptado y Desencritado de mensajes</h1>
+                <div class="padre-boton-borrar">
+                    <textarea class="texto-a-ingresar" id="texto-ingresado" placeholder="Ingrese el texto aqui" cols="50" rows="16"></textarea>
+                    <button onclick="borrarTexto();"  class="boton-borrar">&#9949;</button>
+                </div>
+            </section>
+            
+            <section>
+                <button onclick="Encriptar();" class="Botones-Encriptar" id="boton-encriptar">Encriptar</button>
+                <button onclick="Desencriptar();" class="Botones-Encriptar" id="boton-desencriptar">Desencriptar</button>
+                
+            </section>
         </div>
-        <div>
-            <h3>Texto Convertido</h3>
-            <label id="texto-convertido"></label>
-        </div>
-        <div>
-            <button onclick="Encriptar();" class="Botones-Encriptar">Encriptar</button>
-            <button onclick="Desencriptar();" class="Botones-Encriptar">Desencriptar</button>
-<!--             
-            <input type="button" value="Encriptar" class="Boton-Encriptar" >
-            <input type="button" value="Desencriptar" class="Boton-Desencriptar" > -->
+        <div id="lado-derecho">
+            <section id="mostrar-texto">
+                <h3>Texto Convertido</h3>
+                <label id="texto-convertido"></label>
+                <button onclick="copiarTexto();" class="Botones-Encriptar" id="boton-copiar">Copiar Texto</button>
+            </section>
+            <section id="mostrar-imagen">
+                <img src="hombre lupa.png" id="imagen-hombre">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </section>
         </div>
     </main>
     <footer>

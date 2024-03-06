@@ -1,0 +1,150 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+main{
+    background-color: rgb(243,245,252);
+
+}
+
+#lado-izquierdo{
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5%;
+    text-align: center;
+}
+
+#lado-derecho{
+    width: 30%;
+    background-color: white;
+    display: inline-block;
+    border-width: 1px;
+    padding: 2%;
+    border-radius: 1em;
+    margin: 2em 0;
+    height: 400px;
+    text-align: center;
+}
+
+#imagen-hombre{
+    width: 100%;
+}
+
+#lado-izquierdo h1{
+    font-weight: bold;
+}
+
+#texto-ingresado{
+    resize: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    margin: 2% 0;
+    padding: 10px;
+}
+/* 
+.Botones-Encriptar{
+    background-color: rgba(16, 22, 203, 0.8);
+    font-size: 1em;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.Botones-Encriptar:after {
+    background-color: rgba(176, 178, 232, 0.8);
+    animation-duration: 1s;
+    transition-duration: 1s;
+    
+} */
+
+.boton-borrar {
+    border-width: 0px;
+    position: relative;
+    left: -37px;
+    top: 12px;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    visibility:hidden;
+    font-size: 1.1em;
+}
+
+.padre-boton-borrar{
+    display: inline-block;
+}
+
+.padre-boton-borrar:hover .boton-borrar{
+    visibility: visible;
+}
+
+
+.Botones-Encriptar {
+    position: relative;
+    background-color: rgb(10,56,113);
+    border-width: 1px; 
+    border-radius: 0.3em;
+    border-color: rgb(126,150,182);
+    font-size: 1em;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+.Botones-Encriptar:after {
+    content: "";
+    background-color: rgba(176, 178, 232, 0.8);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+.Botones-Encriptar:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+#boton-desencriptar{
+    background-color: rgb(243,245,252);
+    color: rgb(126,150,182);
+
+  }
+
+#mostrar-texto{
+    height: 400px;
+}
+
+h3{
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+#texto-convertido {
+    display: block;
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px 0;
+}
+
+#boton-copiar{
+    position: relative;
+    top: 10px;
+    background-color: rgb(255,255,255);
+    color: rgb(126,150,182);
+    display: inline;
+    width: auto;
+}
+
